@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <!-- Primary Meta Tags -->
+<title>Contact ACORSER LEGAL INC | M NJAH ATTORNEYS T/A</title>
+<meta name="title" content="Contact ACORSER LEGAL INC | M NJAH ATTORNEYS T/A">
+<meta name="description" content="Contact ACORSER LEGAL INC for trusted legal advice and representation. Call, email, or visit our offices in Hatfield, Pretoria to schedule a consultation.">
+<meta name="keywords" content="contact attorney Pretoria, ACORSER Legal Inc contact, lawyer Pretoria, legal consultation South Africa, M Njah Attorneys">
+<meta name="author" content="ACORSER LEGAL INC">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1a1a5e">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://acorser.co.za/contact.html">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="apple-touch-icon" href="images/logo.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://acorser.co.za/contact.html">
+<meta property="og:title" content="Contact ACORSER LEGAL INC">
+<meta property="og:description" content="Speak with experienced attorneys at ACORSER LEGAL INC. Book a consultation or contact us today.">
+<meta property="og:image" content="https://acorser.co.za/images/logo.png">
+<meta property="og:image:alt" content="ACORSER LEGAL INC Logo">
+<meta property="og:site_name" content="ACORSER LEGAL INC">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact ACORSER LEGAL INC">
+<meta name="twitter:description" content="Get in touch with our experienced legal team in Hatfield, Pretoria.">
+<meta name="twitter:image" content="https://acorser.co.za/images/logo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy: #1a1a5e;
+            --royal-blue: #2e3b8f;
+            --light-blue: #4a90e2;
+            --sky-blue: #87ceeb;
+            --gold: #c9a84c;
+            --gold-light: #e8d5a3;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --cream: #faf8f3;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--white);
+            overflow-x: hidden;
+            padding-bottom: 60px;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            background: var(--white);
+            color: var(--navy);
+            padding: 0.5rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            border-bottom: 3px solid var(--gold);
+            transition: transform 0.3s ease;
+        }
+
+        .header.hidden {
+            transform: translateY(-100%);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-img {
+            height: 70px;
+            width: auto;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--gold);
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .nav-menu a i {
+            margin-right: 4px;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--navy);
+            font-size: 1.8rem;
+            cursor: pointer;
+            z-index: 1002;
+        }
+
+        /* ===== SIDEBAR ===== */
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 1001;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .sidebar-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: -320px;
+            width: 320px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--navy) 0%, var(--royal-blue) 100%);
+            z-index: 1002;
+            transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            box-shadow: -5px 0 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .sidebar.active {
+            right: 0;
+        }
+
+        .sidebar-close {
+            align-self: flex-end;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 2rem;
+            cursor: pointer;
+            margin-bottom: 2rem;
+            transition: transform 0.3s;
+        }
+
+        .sidebar-close:hover {
+            transform: rotate(90deg);
+            color: var(--gold);
+        }
+
+        .sidebar-logo {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebar-logo img {
+            height: 60px;
+            margin-bottom: 0.5rem;
+            filter: brightness(0) invert(1);
+        }
+
+        .sidebar-logo h3 {
+            color: var(--gold);
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            flex: 1;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar-nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            display: block;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: all 0.3s;
+            border-left: 3px solid transparent;
+        }
+
+        .sidebar-nav a i {
+            width: 1.8rem;
+            display: inline-block;
+        }
+
+        .sidebar-nav a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-left-color: var(--gold);
+            padding-left: 1.5rem;
+        }
+
+        .sidebar-contact {
+            margin-top: auto;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebar-contact h4 {
+            color: var(--gold);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .sidebar-contact a {
+            color: var(--white);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.8rem 0;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .sidebar-contact a:hover {
+            color: var(--gold);
+        }
+
+        .sidebar-contact .icon {
+            font-size: 1.2rem;
+            width: 1.8rem;
+        }
+
+        /* ===== PAGE HEADER ===== */
+        .page-header {
+            margin-top: 86px;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--navy), var(--royal-blue));
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: rgba(201, 168, 76, 0.08);
+            border-radius: 50%;
+        }
+
+        .page-header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-header h1 span {
+            color: var(--gold);
+        }
+
+        .page-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-header .breadcrumb {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-header .breadcrumb a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .page-header .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-section {
+            padding: 4rem 2rem;
+            background: var(--light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Contact Info */
+        .contact-info h2 {
+            color: var(--navy);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info > p {
+            color: #555;
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+            padding: 1.2rem;
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item .icon-box {
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: var(--navy);
+        }
+
+        .contact-item .content h4 {
+            color: var(--navy);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.2rem;
+        }
+
+        .contact-item .content p,
+        .contact-item .content a {
+            color: #555;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .contact-item .content a:hover {
+            color: var(--gold);
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--navy);
+            font-size: 1.3rem;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background: var(--gold);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(201, 168, 76, 0.3);
+        }
+
+        /* Contact Form */
+        .contact-form-wrapper {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-form-wrapper h2 {
+            color: var(--navy);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form-wrapper p {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .form-group label .required {
+            color: #e74c3c;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.9rem 1.2rem;
+            border: 2px solid #e8e8e8;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s;
+            background: var(--light);
+            color: var(--dark);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 4px rgba(201, 168, 76, 0.15);
+            background: var(--white);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 130px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .btn-submit {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: var(--navy);
+            border: none;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(201, 168, 76, 0.3);
+        }
+
+        /* ===== MAP SECTION ===== */
+        .map-section {
+            padding: 0;
+            background: var(--light);
+        }
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+            background: #ddd;
+            position: relative;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--navy);
+            color: var(--white);
+            padding: 4rem 2rem 2rem;
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto 3rem;
+        }
+
+        .footer-brand h3 {
+            color: var(--gold);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand p {
+            opacity: 0.8;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        .footer-logo {
+            height: 70px;
+            width: auto;
+            margin-bottom: 1rem;
+            filter: brightness(0) invert(1);
+        }
+
+        .footer-col h4 {
+            color: var(--gold);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+            display: inline-block;
+        }
+
+        .footer-col a i {
+            margin-right: 6px;
+            font-size: 0.7rem;
+        }
+
+        .footer-col a:hover {
+            color: var(--gold);
+            transform: translateX(5px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            opacity: 0.7;
+            font-size: 0.9rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* ===== EMERGENCY BANNER ===== */
+        .emergency-banner {
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            color: var(--navy);
+            text-align: center;
+            padding: 0.9rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .emergency-banner a {
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 700;
+            border-bottom: 2px solid var(--navy);
+            transition: all 0.3s;
+        }
+
+        .emergency-banner a:hover {
+            color: var(--royal-blue);
+            border-bottom-color: var(--royal-blue);
+        }
+
+        .emergency-banner .banner-text {
+            display: inline;
+        }
+
+        .emergency-banner .banner-icon {
+            display: none;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-in-left {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .contact-form-wrapper {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .page-header {
+                margin-top: 75px;
+                padding: 3rem 1.5rem;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form-wrapper {
+                padding: 1.5rem;
+            }
+
+            .contact-item {
+                padding: 1rem;
+            }
+
+            /* Emergency Banner - hide text, show icon + number */
+            .emergency-banner .banner-text {
+                display: none;
+            }
+
+            .emergency-banner .banner-icon {
+                display: inline;
+            }
+
+            .emergency-banner {
+                gap: 0.5rem;
+                padding: 0.6rem 0.8rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                width: 280px;
+                right: -280px;
+            }
+
+            .page-header h1 {
+                font-size: 1.6rem;
+            }
+
+            .page-header p {
+                font-size: 0.95rem;
+            }
+
+            .contact-info h2 {
+                font-size: 1.6rem;
+            }
+
+            .contact-form-wrapper h2 {
+                font-size: 1.4rem;
+            }
+
+            .btn-submit {
+                font-size: 0.9rem;
+                padding: 0.8rem 1.5rem;
+            }
+
+            .emergency-banner .banner-text {
+                display: none;
+            }
+
+            .emergency-banner .banner-icon {
+                display: inline;
+            }
+
+            .emergency-banner {
+                gap: 0.3rem;
+                padding: 0.5rem 0.5rem;
+                font-size: 0.7rem;
+            }
+
+            .emergency-banner a {
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .emergency-banner .banner-text {
+                display: none;
+            }
+
+            .emergency-banner .banner-icon {
+                display: inline;
+            }
+
+            .emergency-banner {
+                gap: 0.4rem;
+                padding: 0.5rem 0.6rem;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="mainHeader">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="images/logo.png" alt="ACORSER LEGAL INC" class="logo-img">
+            </div>
+            <button class="mobile-toggle" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="index.html#practice"><i class="fas fa-gavel"></i>Practice Areas</a></li>
+                <li><a href="index.html#about"><i class="fas fa-users"></i>About</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Sidebar Mobile Menu -->
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+    <div class="sidebar" id="sidebar">
+        <button class="sidebar-close" onclick="toggleSidebar()"><i class="fas fa-times"></i></button>
+        <div class="sidebar-logo">
+            <img src="images/logo.png" alt="ACORSER">
+            <h3>ACORSER LEGAL INC</h3>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="index.html" onclick="toggleSidebar()"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="index.html#practice" onclick="toggleSidebar()"><i class="fas fa-gavel"></i> Practice Areas</a></li>
+            <li><a href="index.html#about" onclick="toggleSidebar()"><i class="fas fa-user-tie"></i> About</a></li>
+            <li><a href="contact.html" onclick="toggleSidebar()"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="sidebar-contact">
+            <h4>Contact Us</h4>
+            <a href="tel:+270100234474"><i class="fas fa-phone-alt icon"></i> (+27) 010 023 4474</a>
+            <a href="tel:+27728727314"><i class="fas fa-mobile-alt icon"></i> (+27) 072 872 7314</a>
+            <a href="mailto:njahmbah@acorser.co.za"><i class="fas fa-envelope icon"></i> njahmbah@acorser.co.za</a>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Get In <span>Touch</span></h1>
+            <p>We're here to help. Reach out to us for a consultation or any legal inquiry.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;margin:0 0.5rem;"></i> Contact
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-grid">
+            <!-- Contact Info -->
+            <div class="contact-info fade-in-left">
+                <h2>Contact Information</h2>
+                <p>Have a legal matter that needs attention? Reach out to us through any of the channels below and our team will get back to you promptly.</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                        <div class="content">
+                            <h4>Phone</h4>
+                            <a href="tel:+270100234474">(+27) 010 023 4474</a><br />
+                            <a href="tel:+27728727314">(+27) 072 872 7314</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                        <div class="content">
+                            <h4>Email</h4>
+                            <a href="mailto:njahmbah@acorser.co.za">njahmbah@acorser.co.za</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="content">
+                            <h4>Office Address</h4>
+                            <p>Hatfield, Pretoria<br />South Africa</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fas fa-clock"></i></div>
+                        <div class="content">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM<br />Weekends: By Appointment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper fade-in-right">
+                <h2>Send Us a Message</h2>
+                <p>Fill in the form below and we'll get back to you within 24 hours.</p>
+
+                <form id="contactForm" onsubmit="return handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" name="fullName" placeholder="John Doe" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+27 72 872 7314" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject <span class="required">*</span></label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject...</option>
+                            <option value="Business Rescue">Business Rescue</option>
+                            <option value="Insolvency / Estates">Insolvency &amp; Deceased Estates</option>
+                            <option value="Contract Law">Contract Law</option>
+                            <option value="Litigation">Civil &amp; Commercial Litigation</option>
+                            <option value="RAF Claim">RAF / Personal Injury Claim</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" placeholder="Tell us about your legal matter..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.419750186608!2d28.233188815029063!3d-25.745867283669615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956152e1b6c859%3A0x9d6d4b6d8d8b6c8a!2sHatfield%2C%20Pretoria%2C%20South%20Africa!5e0!3m2!1sen!2s!4v1700000000000"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="ACORSER LEGAL INC" class="footer-logo">
+                <h3>ACORSER LEGAL INC</h3>
+                <p>M NJAH ATTORNEYS T/A<br><br>
+                A premier South African law firm delivering excellence in business rescue, insolvency, litigation, and personal injury law. Committed to justice, integrity, and client success.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="index.html#practice"><i class="fas fa-chevron-right"></i> Practice Areas</a></li>
+                    <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Practice Areas</h4>
+                <ul>
+                    <li><a href="index.html#practice"><i class="fas fa-chevron-right"></i> Business Rescue</a></li>
+                    <li><a href="index.html#practice"><i class="fas fa-chevron-right"></i> Insolvent Estates</a></li>
+                    <li><a href="index.html#practice"><i class="fas fa-chevron-right"></i> Contract Law</a></li>
+                    <li><a href="index.html#practice"><i class="fas fa-chevron-right"></i> Litigation</a></li>
+                    <li><a href="index.html#practice"><i class="fas fa-chevron-right"></i> RAF Claims</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+270100234474"><i class="fas fa-phone-alt"></i> (+27) 010 023 4474</a></li>
+                    <li><a href="tel:+27728727314"><i class="fas fa-mobile-alt"></i> (+27) 072 872 7314</a></li>
+                    <li><a href="mailto:njahmbah@acorser.co.za"><i class="fas fa-envelope"></i> njahmbah@acorser.co.za</a></li>
+                    <li><i class="fas fa-map-pin"></i> Hatfield, Pretoria</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ACORSER LEGAL INC (M NJAH ATTORNEYS T/A). All Rights Reserved. | Attorney of the High Court of South Africa</p>
+        </div>
+    </footer>
+
+    <!-- Emergency Banner -->
+    <div class="emergency-banner">
+        <span class="banner-text"><i class="fas fa-exclamation-triangle"></i> Urgent Legal Matter?</span>
+        <span class="banner-icon"><i class="fas fa-phone"></i></span>
+        <span>Call: <a href="tel:+27728727314"><i class="fas fa-phone"></i> 072 872 7314</a></span>
+    </div>
+
+    <script>
+        // ===== SIDEBAR TOGGLE =====
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('sidebarOverlay').classList.toggle('active');
+            document.body.style.overflow = document.getElementById('sidebar').classList.contains('active') ? 'hidden' : '';
+        }
+
+        // ===== SCROLL ANIMATIONS =====
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ===== SMOOTH SCROLL =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // ===== HEADER HIDE ON SCROLL =====
+        let lastScroll = 0;
+        const header = document.getElementById('mainHeader');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > 100) {
+                if (currentScroll > lastScroll) {
+                    header.classList.add('hidden');
+                } else {
+                    header.classList.remove('hidden');
+                }
+            } else {
+                header.classList.remove('hidden');
+            }
+
+            lastScroll = currentScroll;
+        });
+
+        // ===== FORM HANDLING =====
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const form = document.getElementById('contactForm');
+            const formData = new FormData(form);
+
+            // Simple validation check
+            const name = formData.get('fullName');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all required fields.');
+                return false;
+            }
+
+            // Build email body
+            let body = 'New Contact Form Submission\n\n';
+            body += `Name: ${name}\n`;
+            body += `Email: ${email}\n`;
+            body += `Phone: ${formData.get('phone') || 'Not provided'}\n`;
+            body += `Subject: ${subject}\n\n`;
+            body += `Message:\n${message}`;
+
+            // Open default email client
+            window.location.href = `mailto:njahmbah@acorser.co.za?subject=New Inquiry: ${subject}&body=${encodeURIComponent(body)}`;
+
+            // Show success message
+            alert('Thank you for your message! We will get back to you within 24 hours.');
+
+            // Reset form
+            form.reset();
+
+            return false;
+        }
+    </script>
+
+</body>
+</html>
